@@ -1,5 +1,5 @@
 plugins:
-  dl_custom_content2:
+  dl_custom_content3:
     type: text
     default: ''
     client: true
