@@ -5,8 +5,5 @@
 # url: https://github.com/jezdean/dl-custom-content
 
 after_initialize do
-  SiteSetting.class_eval do
-    @choices[:layouts_sidebar_right_widgets].push('dl-custom-content3')
-    @choices[:layouts_sidebar_left_widgets].push('dl-custom-content3')
-  end
+DiscourseLayouts::WidgetHelper.add_widget('dl-custom-content')
 end
